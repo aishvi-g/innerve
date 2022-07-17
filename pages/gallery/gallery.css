@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.body{
+  background-color: black;
+  color:rgb(253, 228, 0) ;
+}
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.gallery {
+  display: flex;
+  margin: 10px auto;
+  max-width: 600px;
+  position: relative;
+  padding-top: 66.6666666667%;
+}
+@media screen and (min-width: 600px) {
+  .gallery {
+    padding-top: 400px;
+  }
+}
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.gallery__thumb {
+  padding-top: 6px;
+  margin: 6px;
+  display: block;
+}
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.gallery__selector:checked + .gallery__img {
+  opacity: 1;
+}
+.gallery__selector:checked ~ .gallery__thumb > img {
+  box-shadow: 0 0 0 3px #0be2f6;
+}
+
+.h1 {
+
+  color: rgb(253, 228, 0);
+  text-align: center;
+  text-decoration-style: double;
+
+}
