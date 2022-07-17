@@ -106,9 +106,9 @@ nav ul li a {
     display: flex;
     height: 95%;
     position: absolute;
-    width: 600px;
+    width: 500px;
     margin-top: 60px;
-    padding-left: 600px;
+    padding-left: 500px;
     justify-content: flex-end;
 }
 .container2 {
